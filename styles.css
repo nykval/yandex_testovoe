@@ -153,19 +153,19 @@ h1 {
 }
 
 .tile[data-digit="1"] {
-  background: var(--blue);
+  background: var(--red);
 }
 
 .tile[data-digit="2"] {
-  background: var(--green);
-}
-
-.tile[data-digit="3"] {
   background: var(--yellow);
 }
 
+.tile[data-digit="3"] {
+  background: var(--green);
+}
+
 .tile[data-digit="4"] {
-  background: var(--red);
+  background: var(--blue);
 }
 
 .tile[data-digit="5"] {
