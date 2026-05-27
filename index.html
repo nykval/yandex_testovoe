@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Цветовая комбинация</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <section id="input-screen" class="screen screen-input">
+        <div class="panel">
+          <h1>Введите комбинацию цифр</h1>
+          <p class="hint">
+            Вводите цифры. 1-5 показываются цветами, остальные объединяются в белую плитку.
+          </p>
+
+          <input
+            id="digit-input"
+            type="text"
+            inputmode="numeric"
+            autocomplete="off"
+            placeholder="Например: 1345"
+            aria-label="Поле ввода комбинации цифр"
+          />
+
+          <button id="show-colors-btn" type="button">Показать цвета</button>
+          <p id="error-message" class="error" aria-live="polite"></p>
+
+          <div class="legend">
+            <p>1 - синий</p>
+            <p>2 - зеленый</p>
+            <p>3 - желтый</p>
+            <p>4 - красный</p>
+            <p>5 - фиолетовый</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="result-screen" class="screen screen-result hidden" aria-live="polite">
+        <button id="back-btn" class="back-btn" type="button">Назад</button>
+        <div id="color-grid" class="color-grid"></div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
